@@ -1,0 +1,76 @@
+// padding
+$distance-map: (pd: padding, pt: padding-top, pb: padding-bottom, pr: padding-right, pl: padding-left , 
+				mg: margin, mt: margin-top, mb: margin-bottom, mr: margin-right, ml: margin-left);
+@each $key,$propety in $distance-map{
+	@for $i from 0 through 24 {
+		$v: $i * 5;
+		.#{$key}#{$v}{
+			#{$propety}: $v + px !important;
+		}
+	}	
+}
+@for $i from 0 through 10 {
+	$v: $i * 5;
+	.mlr#{$v}{ margin-left: $v + px; margin-right: $v + px;}
+	.mtb#{$v}{ margin-top: $v + px; margin-bottom: $v + px;}
+	.plr#{$v}{ padding-left: $v + px; padding-right: $v + px;}
+	.ptb#{$v}{ padding-top: $v + px; padding-bottom: $v + px;}
+}
+
+// font-size
+@for $i from 0 through 10 {
+	$v: ($i * 2) + 12;
+	.fs#{$v} {font-size: $v + px; }
+}
+
+// width
+@for $i from 0 through 10 {
+    $width: $i*10;
+    $width1: $i*10 + 100;
+    $width2: $i*10 + 200;
+    $width3: $i*10 + 300;
+    $width4: $i*10 + 400;
+    $width5: $i*10 + 500;
+    .w#{$width} {width: rem2($width) !important;}
+    .w#{$width1} {width: rem2($width1) !important;}
+    .w#{$width2} {width: rem2($width2) !important;}
+    .w#{$width3} {width: rem2($width3) !important;}
+    .w#{$width4} {width: rem2($width4) !important;}
+    .w#{$width5} {width: rem2($width5) !important;}
+    .mw#{$width} {width: rem2($width) !important;}
+    .mw#{$width1} {width: rem2($width1) !important;}
+    .mw#{$width2} {width: rem2($width2) !important;}
+    .mw#{$width3} {width: rem2($width3) !important;}
+    .mw#{$width4} {width: rem2($width4) !important;}
+    .mw#{$width5} {width: rem2($width5) !important;}
+}
+
+// height
+@for $i from 0 through 10 {
+  $height: $i*10;
+  $height1: $i*10 + 10;
+  $height2: $i*10 + 20;
+  $height3: $i*10 + 30;
+  $height4: $i*10 + 40;
+  $height5: $i*10 + 50;
+  .h#{$height} {height: rem2($height) !important;}
+    .h#{$height1} {height: rem2($height1) !important;}
+    .h#{$height2} {height: rem2($height2) !important;}
+    .h#{$height3} {height: rem2($height3) !important;}
+    .h#{$height4} {height: rem2($height4) !important;}
+    .h#{$height5} {height: rem2($height5) !important;}
+    .lh#{$height} {line-height: rem2($height) !important;}
+    .lh#{$height1} {line-height: rem2($height1) !important;}
+    .lh#{$height2} {line-height: rem2($height2) !important;}
+    .lh#{$height3} {line-height: rem2($height3) !important;}
+    .lh#{$height4} {line-height: rem2($height4) !important;}
+    .lh#{$height5} {line-height: rem2($height5) !important;}
+}
+// widht percent
+@for $i from 0 through 10 {
+    $percent1: $i*5;
+    $percent2: $i*5 + 50;
+    .wp#{$percent1} {width: $percent1 + 0% !important; } 
+    .wp#{$percent2} {width: $percent2 + 0% !important; }
+}
+

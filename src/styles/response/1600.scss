@@ -1,0 +1,6 @@
+@media screen and (max-width: 1920px) {
+  html,
+  body {
+    font-size: #{1700px/$screen-width*$font-size-root};
+  }
+}

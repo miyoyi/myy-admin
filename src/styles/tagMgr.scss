@@ -1,0 +1,40 @@
+// 标签管理专用样式
+.tag{
+  &-pink{
+    color:#eb5c6c;
+  }
+  &-yellow{
+    color:#f7a747;
+  }
+  &-green{
+    color:#5eeb86
+  }
+  &-blue{
+    color:#5aa3ec
+  }
+}
+.tag-bgc{
+  &-pink{
+    background-color: #FDCFD4;
+  }
+  &-yellow{
+    background-color:#FFEFDA
+  }
+}
+.tag-border{
+  &-pink{
+    border:1px solid #FDCFD4
+  }
+  &-yellow{
+    border:1px solid #FFEFDA
+  }
+  &-green{
+    border:1px solid #5eeb86
+  }
+  &-blue{
+    border:1px solid #5aa3ec
+  }
+}
+.tagBox-bgc{
+  background-color: #fbfbfb;
+}

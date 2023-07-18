@@ -1,0 +1,95 @@
+.th-color {
+  .el-table {
+    th {
+      background: $color-gray;
+    }
+  }
+}
+
+.el-table th {
+  padding: 10px 0;
+  background: $bg-gray;
+  text-align: center;
+  font-size:rem(14px);
+  font-weight: normal;
+}
+.el-table {
+  font-size:rem(14px);
+  .el-input.is-disabled .el-input__inner {
+    border-color: transparent;
+    background: transparent;
+    color: #606266;
+  }
+  &.th-color {
+    th {
+      background: $bg-gray;
+    }
+  }
+  &.el-table--fit,
+  &.el-table--border {
+    th {
+      padding: 10px 0; // font-size: 13px;
+      // font-weight: normal
+    }
+    th > .cell {
+      color: #666;
+    }
+    td {
+      padding: 10px 0;
+      // text-align: left;
+      // text-align: center;
+      font-size:rem(13px)
+    }
+    .cell {
+      min-height: rem(23px);
+      line-height: rem(23px);
+      .el-input__inner,
+      .el-form-item__content,
+      .el-select {
+        min-height: rem(23px);
+        line-height: rem(23px);
+      }
+      .el-form-item {
+        margin: 0;
+      }
+      .el-input__icon {
+        line-height: rem(23px);
+      }
+    }
+  }
+  td {
+    padding: 10px 0;
+    // text-align: center;
+      font-size:rem(13px)
+  }
+}
+
+.el-table--border,
+.el-table--group {
+  border: 1px solid $color-gray;
+  border-right: none;
+  border-bottom: none;
+}
+
+.el-table--border::after,
+.el-table--group::after,
+.el-table::before,
+.el-table__fixed-right::before,
+.el-table__fixed::before {
+  background: #ddd;
+}
+
+.el-table__empty-block {
+  min-height: 44px;
+}
+
+//隐藏表格复选框表头全选功能
+.hide-heard {
+  .el-checkbox {
+    display: none;
+  }
+}
+// 设置zm-table的toolTip宽度，默认为60%
+.el-tooltip__popper {
+  max-width: 60%!important; 
+}

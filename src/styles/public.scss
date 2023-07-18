@@ -1,0 +1,113 @@
+#app {
+    height: 100%;
+}
+.app-container {
+    padding: rem(20px);
+    height: 100%;
+    overflow: auto;
+}
+.app-block+.app-block{
+    margin-top:10px;
+}
+.bc-f{
+    background: #fff;
+}
+
+.fca2 {
+    color: #A2A2A2;
+}
+
+.zm-panel-form {
+    .el-select,.el-input {
+        width: rem(320px);
+    }
+}
+
+.echarts {
+    &.vma-chart {
+        width: 100%;
+        height: 280px;
+    }
+    &.vma-small-chart {
+        width: 100%;
+        height: 210px;
+    }
+}
+.el-table{
+    .el-dropdown{
+      font-size:rem(14px);
+    }
+    .el-dropdown-menu__item{
+      font-size:rem(14px);
+    }
+  }
+  .el-button{
+    font-size:rem(14px) !important;
+  }
+
+.navbar {
+    .el-badge__content.is-fixed {
+        top: 4px;
+        right: 10px;
+    }
+
+    .el-badge__content {
+        border: 0;
+    }
+
+    .top-menu {
+        margin: 0 10px;
+
+        .el-tabs__header {
+            border: 0;
+            margin: 0;
+
+            .el-tabs__item {
+                font-weight: 400;
+                color: #666;
+                border: 0;
+                // padding: 0 rem(30px);
+                transition: all 0.3s;
+
+                &.is-active {
+                    color: $theme;
+                }
+            }
+        }
+
+        .el-tabs__active-bar {
+            bottom: 5px;
+            height: 3px;
+            border-radius: 1px;
+        }
+
+        .el-tabs__nav-wrap::after {
+            display: none;
+        }
+
+        &.el-tabs--card>.el-tabs__header .el-tabs__nav {
+            border: 0;
+        }
+
+        .el-tabs__nav-next,
+        .el-tabs__nav-prev {
+            // color: #fff;
+            line-height: inherit;
+            transition: all 0.3s;
+
+            &:hover {
+                background: rgba(255, 255, 255, 0.3);
+
+                i {
+                    color: #2973e9;
+                }
+            }
+        }
+    }
+}
+// 审批详情页面按钮吸顶效果
+.optionBtn{
+    position:sticky;
+    top:-10px;
+    z-index: 999;
+  }

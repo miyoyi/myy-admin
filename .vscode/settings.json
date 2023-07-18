@@ -1,0 +1,82 @@
+{
+    "security.workspace.trust.untrustedFiles": "open",
+    // #去掉代码结尾的分号
+    "prettier.semi": false,
+    // #使用带引号替代双引号
+    "prettier.singleQuote": true,
+    "editor.formatOnSave": false, // #每次保存的时候自动格式化
+    //  "editor.formatOnPaste": true,
+    "editor.formatOnType": false,
+    "editor.suggestSelection": "first",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+    "eslint.enable": true,
+    "eslint.run": "onType",
+    // 添加 vue 支持
+    "eslint.validate": [
+      "javascript",
+      "typescript",
+      "javascriptreact",
+      "vue-html",
+      "html",
+      "vue"
+    ],
+    "eslint.options": {
+      "extensions": [".ts", ".tsx", ".js", ".vue"]
+    },
+    "files.associations": {
+      "*.vue": "vue",
+      "*.js": "javascript",
+      "*.ts": "typescript",
+      "*.cjson": "jsonc",
+      "*.wxss": "css",
+      "*.wxs": "javascript"
+    },
+    "vetur.format.defaultFormatter.html": "js-beautify-html",
+    "vetur.format.defaultFormatter.js": "vscode-typescript",
+    "vetur.format.defaultFormatterOptions": {
+      "js-beautify-html": {
+        "wrap_line_length": 200,
+        "wrap_attributes": "auto",
+        "end_with_newline": false
+      },
+      "prettier": {
+        "semi": false,
+        "singleQuote": true,
+        "eslintIntegration": false //开启 eslint 支持
+      }
+    },
+    "vetur.format.options.tabSize": 4,
+    "vetur.grammar.customBlocks": {
+      "docs": "md",
+      "i18n": "json"
+    },
+    "explorer.confirmDelete": false,
+    "emmet.includeLanguages": {
+      "wxml": "html"
+    },
+    "minapp-vscode.disableAutoConfig": true,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "explorer.confirmDragAndDrop": false,
+    "workbench.editorAssociations": {
+      "*.bdic": "default"
+    },
+    "[typescript]": {
+      "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+    },
+    "[json]": {
+      "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[jsonc]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[vue]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "todohighlight.keywords":["Todo","TODO","todo"],
+    "settingsSync.ignoredExtensions": [
+    
+    ]
+  }
+  

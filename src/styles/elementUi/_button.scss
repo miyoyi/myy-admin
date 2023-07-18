@@ -1,0 +1,20 @@
+.el-dropdown .el-dropdown__caret-button{
+    min-width:10px;
+}
+button.el-button--default{
+    color:#333;
+    &.el-button--primary{
+        color: #fff;
+        &:hover,:focus{
+            color:#fff;
+            border:1px solid #ddd
+        }
+    }
+    &:hover,:focus{
+        color:#333;
+        border:1px solid #ddd
+    }
+}
+button.el-button.el-button--text{
+    padding:0 2px;
+}

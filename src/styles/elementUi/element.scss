@@ -1,0 +1,205 @@
+//reset element ui css
+.upload-hide-add .el-upload,
+.upload-hide-add .el-upload--picture-card {
+  display: none !important;
+}
+
+// .el-upload-dragger {
+//   width: 148px;
+//   height: 148px;
+// }
+
+.upload-hide-add {
+  // width: 400px;
+}
+
+.el-menu--horizontal {
+  border-bottom: none !important;
+}
+
+.el-tabs__item:focus.is-active.is-focus:not(:active) {
+  box-shadow: none !important;
+}
+.el-pagination{
+  white-space: inherit;
+}
+//内部可配置值的圆型图标
+.circle-span {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  line-height: 26px;
+  text-align: center;
+  border-radius: 50%;
+  background: $background-color-dark;
+  color: #fff;
+}
+
+//按钮默认间距
+.el-button {
+  & + .el-button {
+    margin-left: 10px;
+    &.el-button--text {
+      margin-left: 10px;
+    }
+  }
+}
+
+//隐藏单选文字
+.el-radio{
+  &.no-label{
+    .el-radio__label{
+      display: none
+    }
+  }
+}
+
+//弹窗
+.dialogContainer {
+  .el-dialog__header {
+    //      background: #ebf1f6;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .el-dialog__body {
+    max-height: 550px;
+    overflow: auto;
+
+    .el-select {
+      width: 100%;
+    }
+
+    .el-input {
+      width: 100%;
+    }
+
+    .el-date-editor {
+      width: 100%;
+    }
+
+    .el-cascader {
+      width: 100%;
+    }
+  }
+
+  .dialog-footer {
+    text-align: right;
+  }
+}
+
+.tags-item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.el-checkbox {
+  margin-left: 0 !important;
+
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+//可填写表格
+.edit-table {
+  .one-td {
+    padding: 0 !important;
+
+    .cell {
+      padding: 0;
+
+      .el-form-item {
+        margin: 0;
+        width: 100%;
+        padding: 15px 0;
+
+        &.isFalse {
+          background-color: rgba(228, 228, 228, 1);
+          color: #606266;
+        }
+      }
+    }
+  }
+
+  .el-form-item {
+    &.isNoEdit {
+      margin-bottom: 0 !important;
+    }
+  }
+
+  .el-input__inner {
+    border: 0;
+    background: none;
+    text-align: center;
+    padding: 0;
+  }
+}
+
+.zm-dialog .el-dialog__body {
+  padding: 10px 20px;
+  max-height: 50vh !important;
+  overflow: auto !important;
+}
+
+.search-form {
+  &.el-form .el-form-item {
+    margin-bottom: 5px;
+  }
+}
+
+// cover some element-ui styles
+
+.el-breadcrumb__inner,
+.el-breadcrumb__inner a {
+  font-weight: 400 !important;
+}
+
+// to fixed https://github.com/ElemeFE/element/issues/2461
+//alert
+.el-alert--primary {
+  background-color: lighten($theme-primary, 30%);
+  color: darken($theme-primary, 30%);
+  height: 50px;
+  .el-alert__closebtn.is-customed {
+    display: inline-block;
+    height: 25px;
+    box-sizing: border-box;
+    line-height: 25px;
+    top: 12px;
+    padding: 0px 10px;
+    border: 1px solid $theme-primary;
+    border-radius: 3px;
+    color: darken($theme-primary, 10%);
+  }
+  .el-alert__content {
+    // display: flex;
+    min-width: 0;
+    padding-right: 90px;
+  }
+}
+
+// refine element ui upload
+// .upload-container {
+//     .el-upload {
+//         width: 100%;
+
+//         .el-upload-dragger {
+//             width: 100%;
+//             height: 200px;
+//         }
+//     }
+// }
+// .el-upload {
+//     input[type="file"] {
+//         display: none !important;
+//     }
+// }
+
+// .el-upload__input {
+//     display: none;
+// }
+.el-cascader__search-input{
+  margin:2px 0 2px 10px
+}

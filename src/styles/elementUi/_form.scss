@@ -1,0 +1,46 @@
+.el-input__inner {
+    border-radius: 2px;
+    padding: 0 10px;
+    font-size: 12px;
+}
+.el-textarea__inner {
+    font-size: 12px;
+    padding: 5px 10px
+}
+.el-form .el-form-item{
+    margin-bottom: 15px;
+}
+.form-table {
+    border: 1px solid #d3dce6;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.form-text .el-form-item {
+    margin-bottom: 5px
+}
+
+.form-text .el-form-item--mini {
+    margin-top: 6px;
+    margin-bottom: 0px;
+    line-height: 20px;
+}
+
+.form-text .el-form-item--mini .el-form-item__content,
+.form-text .el-form-item--mini .el-form-item__label {
+    line-height: 20px;
+    font-size: 13px;
+}
+
+.form-text .el-form-item--mini .el-input__inner {
+    top: -5px;
+    position: relative
+}
+
+.el-form-item__label,
+.el-checkbox__label {
+    font-size: 13px
+}
+.el-form-item__content .el-table{
+    line-height: 23px;
+}
